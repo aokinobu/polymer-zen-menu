@@ -1,6 +1,6 @@
 import {PolymerElement, html} from '@polymer/polymer';
 
-class MyElement extends PolymerElement {
+class ZenMenuElement extends PolymerElement {
 
   static get properties() { 
     return {
@@ -26,4 +26,4 @@ class MyElement extends PolymerElement {
   }
 }
 
-customElements.define('zen-menu', MyElement);
+customElements.define('zen-menu', ZenMenuElement);
