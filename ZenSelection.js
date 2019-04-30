@@ -1,8 +1,6 @@
 import {PolymerElement, html} from '@polymer/polymer';
-// import {ZenMenuSelectionElement} from './ZenSelectionElement.js';
-import './ZenSelectionElement.js';
 
-class ZenMenuElement extends PolymerElement {
+class ZenSelectionElement extends PolymerElement {
 
   static get properties() { 
     return {
@@ -26,7 +24,6 @@ class ZenMenuElement extends PolymerElement {
       <span class="xp" >[[xp]]</span><br />
       <span class="tooltip">Current Menu:</span><br />
       <div class="menu" >[[menu]]</div>
-      <zen-menu-selection on-click="selectionClick"></zen-menu-selection>
     `;
   }
 
@@ -39,12 +36,6 @@ class ZenMenuElement extends PolymerElement {
 
     this.menu = "menu was clicked when XP was:" + this.xp;
   }
-
-  selectionClick(e) {
-    console.log(e);
-    let element = this.shadowRoot.querySelector('zen-menu-selection');
-    element.click();
-  }
 }
 
-customElements.define('zen-menu', ZenMenuElement);
+customElements.define('zen-menu-selection', ZenSelectionElement);
