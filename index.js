@@ -5,6 +5,7 @@ class MyElement extends PolymerElement {
   static get properties() { 
     return {
       xp: {
+        notify: true,
         type: Number,
         value: 0
       }
