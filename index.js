@@ -14,7 +14,8 @@ class MyElement extends PolymerElement {
 
   static get template() {
     return html`
-      <style> .xp { color: blue; } </style>
+      <style> .xp { color: red; } </style>
+      This is the Zen Menu Component.<br>
       
       <span class="xp" >Current XP: [[xp]]</span>
     `;
