@@ -44,6 +44,7 @@ class ZenMenuElement extends PolymerElement {
     console.log(e);
     let element = this.shadowRoot.querySelector('zen-menu-selection');
     element.click();
+    console.log(element.name);
   }
 }
 

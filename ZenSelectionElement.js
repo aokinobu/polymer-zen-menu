@@ -5,7 +5,7 @@ class ZenMenuSelectionElement extends PolymerElement {
   static get properties() { 
     return {
       chosen: {
-        type: String,
+        type: Boolean,
         value: ""
       }
     }
@@ -19,13 +19,22 @@ class ZenMenuSelectionElement extends PolymerElement {
     `;
   }
 
+  constructor() {
+    super();
+    this.name = 'selection1';
+  }
+
   ready() {
     super.ready();
   }
 
   click() {
     console.log("click");
-    this.chosen = "yeay i was picked";
+    this.chosen = true;
+  }
+
+  canDisplay() {
+
   }
 }
 
